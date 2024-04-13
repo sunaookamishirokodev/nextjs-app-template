@@ -26,6 +26,7 @@ const config: Config = {
 		},
 	},
 	plugins: [
+		require('daisyui'), // remove if you dont use it
 		plugin(function ({ addUtilities }) {
 			addUtilities({
 				'.backface-visible': {

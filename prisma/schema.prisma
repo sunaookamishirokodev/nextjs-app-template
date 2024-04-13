@@ -10,6 +10,11 @@ datasource db {
   url      = "file:./dev.db"
 }
 
+model Todos {
+  id       Int   @id @default(autoincrement())
+  content  String
+}
+
 model Comments {
   id       String  @id @default(cuid())
   author   Author  @relation(fields: [authorId], references: [id], onUpdate: Cascade, onDelete: Cascade)
