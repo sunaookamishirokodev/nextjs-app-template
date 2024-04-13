@@ -1,0 +1,11 @@
+{
+	"printWidth": 90,
+	"useTabs": true,
+	"singleQuote": true,
+	"quoteProps": "as-needed",
+	"trailingComma": "all",
+	"endOfLine": "lf",
+	"plugins": ["prettier-plugin-tailwindcss"],
+	"tailwindAttributes": ["className"],
+	"tabWidth": 2
+}
