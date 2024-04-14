@@ -14,7 +14,7 @@
 	"scripts": {
 		"test": "echo test xD",
 		"dev": "next dev",
-		"build": "next build",
+		"build": "prisma generate && next build",
 		"generate": "prisma generate",
 		"start": "next start",
 		"lint": "next lint",
