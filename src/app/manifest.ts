@@ -8,7 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
 		short_name: seo.title?.toString(),
 		description: seo.description?.toString(),
 		start_url: '/',
-		display: 'standalone',
+		// display: 'standalone',
 		background_color: colors.main,
 		icons: [
 			{
