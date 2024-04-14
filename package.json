@@ -14,7 +14,8 @@
 	"scripts": {
 		"test": "echo test xD",
 		"dev": "next dev",
-		"build": "next build && prisma migrate dev --name init",
+		"build": "prisma generate && next build",
+		"generate": "prisma generate",
 		"start": "next start",
 		"lint": "next lint",
 		"format": "prettier --write . && eslint src --ext mjs,tsx,ts --fix",
