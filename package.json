@@ -64,6 +64,8 @@
 	},
 	"optionalDependencies": {
 		"@tanstack/react-query": "^5.29.2",
-		"daisyui": "^4.10.1"
+		"@vercel/postgres": "^0.8.0",
+		"daisyui": "^4.10.1",
+		"vercel": "^34.0.0"
 	}
 }
