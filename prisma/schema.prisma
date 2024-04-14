@@ -16,23 +16,3 @@ model Todos {
   createAt DateTime @default(now())
   updateAt DateTime @updatedAt
 }
-
-model Comments {
-  id       String  @id @default(cuid())
-  author   Author  @relation(fields: [authorId], references: [id], onUpdate: Cascade, onDelete: Cascade)
-  authorId String
-  content  String
-  createAt String
-  deleted  Boolean @default(false)
-}
-
-model Author {
-  id          String     @id @default(uuid())
-  username    String
-  displayName String
-  email       String
-  avatar      String
-  comments    Comments[]
-
-  @@map("User")
-}
